@@ -15,41 +15,41 @@ Alter 13-17 // Cola
 */
 
 
-let name1, age;
-name1 = prompt("Please enter your name: ");
-age = parseInt(prompt("Please enter your age: "));
-console.log("Name: " + name1 + " // " + "Age: " + age);
+let name1, alter;
+name1 = prompt("Wie ist dein Name?: ");
+alter = parseInt(prompt("Und jetzt wie alt bist du grade?: "));
+console.log("Name: " + name1 + " // " + "Alter: " + alter);
 
-let milk, juice, cola, whisky, record;
+let Milch, Saft, Cola, Whisky, Weltrekord;
 
-milk = (age >= 0, age <= 5);
-juice = (age >= 6, age <= 12);
-cola = (age >= 13, age <= 17);
-whisky = (age >= 18, age <= 117);
-record = (age >= 118);
+Milch = (alter >= 0, alter <= 5);
+Saft = (alter >= 6, alter <= 12);
+Cola = (alter >= 13, alter <= 17);
+Whisky = (alter >= 18, alter <= 117);
+Weltrekord = (alter >= 118);
 
 switch (true) {
-    case (milk):
-        console.log("Hi, at this age milk is your best friend!");
+    case (Milch):
+        console.log("Hi, in diesen Alter ist Milch dein bester Freund!");
         break;
 
-    case (juice):
-        console.log("Hi, now you can drink juice besides milk!");
+    case (Saft):
+        console.log("Hi, jetzt kannst du neben Milch auch Saft trinken!");
         break;
 
-    case (cola):
-        console.log("You can drink cola now, but better drink juice or milk!");
+    case (Cola):
+        console.log("Jetzt kannst du endlich Cola trinken und länger wach bleiben!");
         break;
 
-    case (whisky):
-        console.log("Whisky and Cola Queen of Danc floor!");
+    case (Whisky):
+        console.log("Whisky und Cola! Jetzt lass es krachen!");
         break;
 
-    case (record):
-        console.log("World record broken!");
+    case (Weltrekord):
+        console.log("Weltrekordbruch!");
         break;
 
     default:
-        console.log("please repeat!")
+        console.log("Starte neu Dude!")
         break;
 }
