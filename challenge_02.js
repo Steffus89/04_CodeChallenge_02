@@ -20,13 +20,13 @@ name1 = prompt("Please enter your name: ");
 age = parseInt(prompt("Please enter your age: "));
 console.log("Name: " + name1 + " // " + "Age: " + age);
 
-let milk, juice, cola, whisky;
+let milk, juice, cola, whisky, record;
 
 milk = (age >= 0, age <= 5);
 juice = (age >= 6, age <= 12);
 cola = (age >= 13, age <= 17);
 whisky = (age >= 18, age <= 117);
-
+record = (age >= 118);
 
 switch (true) {
     case (milk):
@@ -45,7 +45,11 @@ switch (true) {
         console.log("Whisky and Cola Queen of Danc floor!");
         break;
 
+    case (record):
+        console.log("World record broken!");
+        break;
+
     default:
-        console.log("World record broken!")
+        console.log("please repeat!")
         break;
 }
